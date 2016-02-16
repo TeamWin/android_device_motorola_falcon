@@ -26,6 +26,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 # Inherit from our custom product configuration
 $(call inherit-product, vendor/omni/config/common.mk)
 
+PRODUCT_PACKAGES += \
+    detect-gpe
+
 PRODUCT_NAME := omni_falcon
 PRODUCT_DEVICE := falcon
 PRODUCT_BRAND := Motorola
