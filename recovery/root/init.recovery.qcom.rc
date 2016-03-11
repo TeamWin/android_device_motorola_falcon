@@ -1,3 +1,8 @@
+on init
+    # Detect GPE and swap fstab
+    wait /dev/block/platform/msm_sdcc.1/by-name/userdata
+    exec /sbin/detect-gpe
+
 on boot
     write /sys/module/lpm_levels/enable_low_power/l2 3
     write /sys/module/msm_pm/modes/cpu0/power_collapse/suspend_enabled 1
