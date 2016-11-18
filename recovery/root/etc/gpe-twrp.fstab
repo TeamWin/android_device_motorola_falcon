@@ -1,14 +1,11 @@
 # mount_point   fstype    device                                             flags
 
-/boot           emmc      /dev/block/platform/msm_sdcc.1/by-name/boot
-/cache          ext4      /dev/block/platform/msm_sdcc.1/by-name/cache
+/boot           emmc      /dev/block/bootdevice/by-name/boot
+/cache          ext4      /dev/block/bootdevice/by-name/cache
 /data           ext4      /dev/block/platform/msm_sdcc.1/by-name/userdata    flags=encryptable=/dev/block/platform/msm_sdcc.1/by-name/metadata
-/fsg            ext4      /dev/block/platform/msm_sdcc.1/by-name/fsg         flags=display="Modem"
-/firmware       ext4      /dev/block/platform/msm_sdcc.1/by-name/modem       flags=display="Firmware";fsflags=ro;mounttodecrypt
-/persist        ext4      /dev/block/platform/msm_sdcc.1/by-name/persist     flags=display="Persist";fsflags=ro;backup=1
-/recovery       emmc      /dev/block/platform/msm_sdcc.1/by-name/recovery    flags=backup=1
-/misc           emmc      /dev/block/platform/msm_sdcc.1/by-name/misc
-/system         ext4      /dev/block/platform/msm_sdcc.1/by-name/system
-/pds            ext3      /dev/block/platform/msm_sdcc.1/by-name/pds         flags=display="PDS"
+/firmware       ext4      /dev/block/bootdevice/by-name/modem                flags=display="Firmware";fsflags=ro;mounttodecrypt
+/recovery       emmc      /dev/block/bootdevice/by-name/recovery             flags=backup=1
+/misc           emmc      /dev/block/bootdevice/by-name/misc
+/system         ext4      /dev/block/bootdevice/by-name/system
 
-/usb-otg        auto      /dev/block/sda1                                    flags=display="USB OTG";storage;wipeingui;removable
+/usb-otg        auto      /dev/block/sda1          /dev/block/sda            flags=display="USB OTG";storage;wipeingui;removable
