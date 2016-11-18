@@ -7,6 +7,7 @@
 /firmware       ext4      /dev/block/platform/msm_sdcc.1/by-name/modem       flags=display="Firmware";fsflags=ro;mounttodecrypt
 /persist        ext4      /dev/block/platform/msm_sdcc.1/by-name/persist     flags=display="Persist";fsflags=ro;backup=1
 /recovery       emmc      /dev/block/platform/msm_sdcc.1/by-name/recovery    flags=backup=1
+/misc           emmc      /dev/block/platform/msm_sdcc.1/by-name/misc
 /system         ext4      /dev/block/platform/msm_sdcc.1/by-name/system
 /pds            ext3      /dev/block/platform/msm_sdcc.1/by-name/pds         flags=display="PDS"
 
