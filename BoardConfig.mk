@@ -17,7 +17,6 @@ ARCH_ARM_HAVE_TLS_REGISTER := true
 
 # Kernel Prebuilt
 TARGET_PREBUILT_KERNEL := device/motorola/falcon/zImage-dtb
-TARGET_CUSTOM_KERNEL_HEADERS := device/motorola/falcon/include
 BOARD_CUSTOM_BOOTIMG_MK := device/motorola/falcon/mkbootimg.mk
 BOARD_KERNEL_CMDLINE := androidboot.bootdevice=msm_sdcc.1 androidboot.hardware=qcom vmalloc=400M androidboot.selinux=permissive
 BOARD_KERNEL_PAGESIZE := 2048
@@ -48,5 +47,4 @@ TW_IGNORE_MAJOR_AXIS_0 := true
 TW_INCLUDE_CRYPTO := true
 TW_INCLUDE_NTFS_3G := true
 TW_NO_USB_STORAGE := true
-TW_TARGET_USES_QCOM_BSP := true
 TW_THEME := portrait_hdpi
